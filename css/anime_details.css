@@ -1,0 +1,1505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171D23;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, button, a, span{
+    font-family: "Nunito", sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+:root {
+    --main_color: #f68913;
+    --main_bg: #171d23;
+}
+
+.navbar {
+    font-family: "Nunito", sans-serif;
+    height: 100px;
+    background: linear-gradient(
+        180deg,
+        rgba(23, 29, 35, 1) 0%,
+        rgba(100, 104, 108, 0.5522409647452731) 100%
+    );
+    border-bottom: 3px solid #707070;
+    z-index: 9999;
+}
+
+
+.nav-link {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.active_page {
+    color: var(--main_color) !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.active_page::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid var(--main_color);
+    bottom: -28px;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* search_div */
+.search_div {
+    position: relative;
+    margin: 0 15px;
+}
+
+.search_div input {
+    width: 336px;
+    border: 2px solid var(--main_color);
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px;
+    padding-right: 55px;
+}
+
+.search_div img {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.nav_icon {
+    margin: 0 15px;
+}
+
+.nav_icon img {
+    margin: 0 15px;
+}
+
+.custom_btn1 {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 140px;
+    height: 51px;
+    transition: 0.2s;
+    margin: 7px 15px;
+}
+
+.custom_btn1:hover {
+    background: var(--main_color);
+    color: #fff;
+}
+
+.custom_btn2 {
+    background: var(--main_color);
+    color: #fff;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 140px;
+    height: 51px;
+    margin: 7px 15px;
+}
+
+.custom_btn2:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
+
+.my_btns {
+    display: flex;
+}
+
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+    flex-wrap: initial;
+}
+
+
+
+/*------------- Navbar MObile---------*/
+
+/* Nav cabecera */
+
+.mobnavmain{
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #22282D !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.form-control {
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: .375rem .75rem .375rem 1rem;
+    background-color: transparent;
+    border: 1px solid #F68913;
+}
+
+
+
+
+
+/* Search Down */
+
+.searchresult {
+    margin-top: 10px;
+    background-color: #292E34;
+    margin: 0 -12px;
+    padding: 5px 0;
+}
+
+.mobsearch {
+    display: flex;
+    padding: 5px;
+}
+
+.mobsearchtxt {
+    padding-left: 10px;
+}
+
+.mobsearchtxt button {
+    border: none;
+    font-size: 8px;
+    border-radius: 15px;
+    background-color: #F68913;
+    padding: 2px 5px;
+}
+
+.mobsearchimg img {
+    height: 40px;
+}
+
+.mobsearchtxt p {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+
+
+/* Mobile Navbar */
+
+.offcanvas.show {
+    transform: none;
+    background-color: #22282D;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: end;
+}
+
+
+.offcanvas-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navprodiv button {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #F68913;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 5px 0;
+}
+
+
+.navprodiv button:hover {
+    background-color: white;
+    color: #F68913;
+
+}
+
+
+.mobilenav {
+    margin-top: 30px;
+}
+
+.mobilenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobilenav ul li {
+    padding-top: 15px;
+}
+
+.mobilenav a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.8;
+}
+
+.mobilenav a:hover {
+    color: #F68913;
+}
+
+
+
+.mobdrama {
+    margin-top: 30px;
+}
+
+.mobdrama button {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #F68913;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.8;
+    color: white;
+    padding: 5px 0;
+}
+
+.mobdrama button:hover {
+    background-color: #F68913;
+}
+
+.mobsocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mobsocial img {
+    margin: 0 5px;
+}
+
+
+
+
+
+
+/* Hero Area */
+
+.mobhero{
+    display: none;
+}
+
+.heroarea{
+    background: url(../img/animebg2.png) no-repeat;
+    background-size: cover;
+    height: 954px;
+}
+
+.topanime {
+    padding: 180px 150px;
+}
+
+.chapterpic{
+    text-align: center;
+}
+
+.chapterpic img {
+    vertical-align: middle;
+    width: 100%;
+}
+
+.chapterpic p {
+    text-align: center;
+    font-size: 25px;
+    color: #F68913;
+    padding-top: 20px;
+}
+
+.heroslidico i{
+    color: #FFC710;
+    font-size: 22px;
+    padding-right: 5px;
+}
+
+.chapterpic button{
+    background-color: #F68913;
+    color: white;
+    margin-right: 15px;
+    border: none;
+    width: 153px;
+    border-radius: 15px;
+    padding: 10px 0;
+    display: block;
+    margin: 0 auto;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+.chapterdetails h1{
+    font-size: 70px;
+    color: white;
+}
+
+.butns{
+    padding: 20px 0;
+}
+
+.chapterdetails button{
+    font-size: 25px;
+    width: 173px;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+.btn1 {
+    background-color: #F68913;
+    color: white;
+    margin-right: 15px;
+    border: none;
+}
+
+.btn2{
+    background: none;
+    border: 2px solid #F68913;
+    color: #F68913;
+}
+
+.chapterdetails p{
+    color: white;
+    font-size: 25px;
+}
+
+.activecrumb a{
+    font-size: 40px;
+    color: #F68913;
+    text-decoration: none;
+    padding-right: 8px;
+}
+
+.breadcrumb-item a{
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    float: left;
+    padding-right: .5rem;
+    color: #ffffff;
+    content: var(--bs-breadcrumb-divider, "|");
+    font-size: 22px;
+}
+
+.breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 0;
+    align-items: center;
+    margin-bottom: 1rem;
+    list-style: none;
+}
+
+
+/*--------------- Chapters Area --------*/
+
+
+.chapters{
+    padding: 60px;
+}
+
+.chapterhead{
+    padding-bottom: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chapterhead h1{
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.chapterhead h2{
+    display: none;
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+button#dropdownMenuButton1 {
+    width: 286px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 6px;
+    align-items: center;
+    margin-right: 15px;
+    background-color: #1B242C;
+    padding: 10px 20px;
+    border: none;
+}
+
+
+
+.dropdown-toggle{
+    font-size: 20px;
+}
+
+.dropdown-item {
+    padding: 10px 20px;
+    color: white;
+    font-size: 22px;
+}
+
+.dropdown-item:hover {
+    background: radial-gradient(circle, rgba(148,187,233,0) 0%, rgba(116,120,153,0.15) 0%, rgba(116,120,153,0.15) 100%);
+    color: #f68913;
+}
+
+.dropdown-menu {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    width: 260px;
+    height: 240px;
+    transform: translate3d(0px, 59px, 0px);
+    background-color: #1B242C;
+}
+
+.filter2{
+    position: relative;
+}
+
+.filter2 input{
+    background-color: #1B242C;
+    border: none;
+    width: 286px;
+    padding: 10px 20px 10px 50px;
+    border-radius: 6px;
+    font-size: 20px;
+    color: white;
+}
+
+.filter2 img {
+    position: absolute;
+    left: 0;
+    align-items: center;
+    top: 14px;
+    left: 20px;
+}
+
+::placeholder{
+    color: white;
+}
+
+
+
+.animes{
+    border-radius: 6px;
+    background-color: #1B242C;
+    position: relative;
+}
+
+.smallplay {
+    position: absolute;
+    left: 55px;
+    top: 50%;
+    bottom: 50px;
+    transform: translateY(-50%);
+}
+
+.cheakbtn{
+    position: absolute;
+    right: 55px;
+    top: 50%;
+    bottom: 50px;
+    transform: translateY(-50%);
+}
+
+.anime1one {
+    border-bottom: 1px solid #707070;
+}
+
+.animesserial{
+    display: flex;
+    padding: 50px 150px;
+}
+
+.animedtls {
+    padding-left: 30px;
+    padding-top: 18px;
+}
+
+.animedtls p{
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    font-weight: 500;
+}
+
+.animedtls span{
+    font-size: 25px;
+    color: #F68913;
+    font-family: 'Poppins', sans-serif;
+}
+
+.activename{
+    color: #F68913 !important;
+}
+
+.lastanime {
+    border: none !important;
+}
+
+
+
+
+.bottombtn {
+    text-align: center;
+    text-decoration: none;
+    background-color: #f68913;
+    color: white;
+    padding: 15px 65px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: bold;
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    border-radius: 15px;
+    border: none;
+}
+
+
+/* Footer */
+
+.footer{
+    background-color: #1B242C;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 32px;
+}
+
+
+
+.footernav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+
+}
+
+.footernav ul li{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footernav ul li a{
+    color: #707070;
+    text-decoration: none;
+}
+
+
+
+.footer hr {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    color: #bbbec0;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+ul{
+    padding-left: 0;
+}
+
+
+
+@media (max-width:1700px){
+
+    .chapterdetails h1 {
+        font-size: 60px;
+        color: white;
+    }
+
+    .chapterdetails {
+        padding-left: 30px;
+    }
+
+}
+
+
+
+@media (max-width:1500px){}
+
+
+
+@media (max-width:1400px){
+
+
+        /* Navbar */
+
+        .nav_icon {
+            margin: 0;
+        }
+    
+        .search_div input {
+            width: 295px;
+        }
+    
+        .search_div {
+            margin: 0;
+        }
+    
+        .nav-link {
+            font-size: 17px;
+        }
+    
+
+
+
+    .chapterdetails p {
+        color: white;
+        font-size: 23px;
+    }
+
+
+    .chapterdetails h1 {
+        font-size: 45px;
+        color: white;
+    }
+
+    .heroslidico i {
+        color: #FFC710;
+        font-size: 18px;
+        padding-right: 5px;
+    }
+
+
+}
+
+
+
+@media (max-width:1300px){
+
+
+        /* Navbar */
+
+        .search_div input {
+            width: 210px;
+        }
+    
+    
+        .nav-item {
+            margin: 0 2px;
+        }
+    
+        .logo_div {
+            width: 150px;
+        }
+    
+        .logo_div img {
+            width: 100%;
+        }
+    
+        .custom_btn1 {
+            width: 92px;
+        }
+    
+        .custom_btn2 {
+            width: 92px;
+        }
+    
+        .nav_icon {
+            display: none;
+        }
+
+
+    .chapterpic p {
+        text-align: center;
+        font-size: 20px;
+        color: #F68913;
+        padding-top: 20px;
+    }
+
+    .heroslidico i {
+        color: #FFC710;
+        font-size: 18px;
+        padding-right: 5px;
+    }
+
+    .chapterpic button {
+        background-color: #F68913;
+        color: white;
+        margin-right: 15px;
+        border: none;
+        width: 126px;
+        border-radius: 15px;
+        padding: 8px 0;
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    .chapterdetails button {
+        font-size: 25px;
+        width: 150px;
+        padding: 5px 0;
+        border-radius: 15px;
+    }
+
+    .chapterdetails p {
+        color: white;
+        font-size: 21px;
+    }
+
+    .animedtls p {
+        font-size: 20px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 900;
+    }
+
+    .animedtls span {
+        font-size: 20px;
+        color: #F68913;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .animesserial {
+        display: flex;
+        padding: 40px 130px;
+    }
+
+    .heroarea {
+        background: url(../img/animebg2.png) no-repeat;
+        background-size: cover;
+        height: 830px;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 245px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        margin-right: 15px;
+        background-color: #1B242C;
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .filter2 input {
+        background-color: #1B242C;
+        border: none;
+        width: 245px;
+        padding: 10px 20px 10px 50px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .smallplay {
+        position: absolute;
+        left: 45px;
+        top: 50%;
+        bottom: 50%;
+        transform: translateY(-50%);
+    }
+
+    .cheakbtn {
+        position: absolute;
+        right: 45px;
+        top: 50%;
+        bottom: 50px;
+        transform: translateY(-50%);
+    }
+
+    .bottombtn {
+        text-align: center;
+        text-decoration: none;
+        background-color: #f68913;
+        color: white;
+        padding: 15px 65px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 60px;
+        border-radius: 15px;
+        border: none;
+    }
+}
+
+
+
+@media (max-width:991px){
+
+
+
+
+
+    .mobnavmain{
+        display: block;
+    }
+
+    .top_navbar{
+        display: none;
+    }
+
+    .navbar {
+        font-family: "Nunito", sans-serif;
+        height: auto;
+        background: none;
+        border-bottom: none;
+        z-index: 0;
+    }
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        flex-wrap: inherit;
+    }
+
+
+
+        /* Navbar */
+        .active_page::after {
+            display: none;
+        }
+    
+    
+        .my_btns {
+            float: right;
+        }
+    
+
+
+    .topanime {
+        padding: 180px 61px;
+    }
+
+    .chapterdetails h1 {
+        font-size: 40px;
+        color: white;
+    }
+
+    .chapterdetails p {
+        color: white;
+        font-size: 16px;
+    }
+
+    .heroarea {
+        background: url(../img/animebg2.png) no-repeat;
+        background-size: cover;
+        height: 676px;
+    }
+
+    .chapterhead h1 {
+        font-size: 30px;
+        color: white;
+        font-weight: 500;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 220px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        margin-right: 8px;
+        background-color: #1B242C;
+        padding: 10px 20px;
+        border: none;
+    }
+
+    .filter2 input {
+        background-color: #1B242C;
+        border: none;
+        width: 200px;
+        padding: 10px 20px 10px 60px;
+        border-radius: 6px;
+        font-size: 20px;
+    }
+
+    .animeimgdiv img {
+        width: 170px;
+    }
+
+    .animedtls {
+        padding-left: 10px;
+        padding-top: 14px;
+    }
+
+    .animesserial {
+        display: flex;
+        padding: 40px 130px;
+        flex-wrap: nowrap;
+    }
+
+    .animedtls p {
+        font-size: 14px;
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+
+    .animedtls span {
+        font-size: 14px;
+        color: #F68913;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .bottombtn {
+        text-align: center;
+        text-decoration: none;
+        background-color: #f68913;
+        color: white;
+        padding: 15px 65px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 32px;
+        width: 240px;
+    }
+
+}
+
+
+
+@media (max-width:768px){
+
+    .navprodiv button {
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #F68913;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        padding: 5px 0;
+    }
+
+    .mobdrama button {
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #F68913;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 0;
+    }
+
+
+    .chapterdetails h1 {
+        font-size: 28px;
+        color: white;
+    }
+
+    .chapterdetails button {
+        font-size: 18px;
+        width: 130px;
+        padding: 5px 0;
+        border-radius: 15px;
+    }
+
+    .butns {
+        padding: 10px 0;
+    }
+
+    .activecrumb a {
+        font-size: 28px;
+        color: #F68913;
+        text-decoration: none;
+        padding-right: 8px;
+    }
+
+    .chapterdetails p br{
+        display: none;
+    }
+
+    .chapterdetails p {
+        color: white;
+        font-size: 14px;
+    }
+
+    .breadcrumb-item a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #707070;
+    }
+
+    .breadcrumb-item+.breadcrumb-item::before {
+        float: left;
+        padding-right: .5rem;
+        color: #707070;
+        content: var(--bs-breadcrumb-divider, "|");
+        font-size: 18px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 32px;
+        width: 200px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 32px;
+        width: 200px;
+    }
+
+    .chapters {
+        padding: 30px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 24px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+}
+
+
+
+@media (max-width:576px){
+
+
+    body{
+        background-color: #22282D;
+    }
+
+    .heroarea{
+        display: none;
+    }
+
+    .mobhero{
+        display: block;
+        background: url(../img/calmobbg.png) no-repeat;
+        background-size: 100% 100%;
+    }
+
+    .mobhead h1 {
+        font-size: 20px;
+        color: white;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    .mobhead img{
+        padding-top: 10px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .mobrates{
+        text-align: center;
+        font-size: 18px;
+        color: #F68913;
+        padding-top: 10px;
+        margin-bottom: 6px;
+    }
+
+    .heroslidico {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mobhead button {
+        background-color: #F68913;
+        color: white;
+        margin-right: 15px;
+        border: none;
+        border-radius: 8px;
+        padding: 4px 20px;
+        display: block;
+        margin: 0 auto;
+        font-size: 14px;
+        margin-top: 18px;
+    }
+
+    .mobdtls{
+        font-size: 16px;
+        color: white;
+        padding-left: 25px;
+        padding-top: 15px;
+    }
+
+    .mobtxtdiv{
+        display: flex;
+        padding-left: 25px;
+    }
+
+    .mobtxtdiv p{
+        color: #F68913;
+        font-size: 16px;
+    }
+
+    .mobtxt1st{
+        width: 80px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .chapterhead h1{
+        display: none;
+    }
+
+    .chapterhead h2{
+        display: block;
+        font-size: 20px;
+        margin: 30px 0 30px 15px;
+        color: white;
+        font-weight: 500;
+    }
+
+
+    .chapterdetails {
+        padding-left: 10px;
+    }
+
+    .activecrumb a {
+        font-size: 22px;
+        color: #F68913;
+        text-decoration: none;
+        padding-right: 8px;
+    }
+
+
+
+
+    .offcanvas-start {
+        top: 0;
+        left: 0;
+        width: 240px;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+
+    .navprodiv button {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #F68913;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        padding: 5px 0;
+    }
+
+
+    .mobdrama button {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #F68913;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 0;
+    }
+
+    .topanime {
+        padding: 50px 20px;
+    }
+
+    .chapterdetails h1 {
+        font-size: 18px;
+        color: white;
+    }
+
+    .chapterdetails button {
+        font-size: 18px;
+        width: 97px;
+        padding: 5px 0;
+        border-radius: 15px;
+    }
+
+    .chapterpic img {
+        vertical-align: middle;
+        width: 50%;
+    }
+
+    .chapterpic {
+        text-align: center;
+        padding-bottom: 40px;
+    }
+
+    .heroarea {
+        background: url(../img/animebg2.png) no-repeat;
+        background-size: 100% 100%;
+        height: 800px;
+    }
+
+    .filters {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 167px;
+        display: flex;
+        justify-content: space-between;
+        border-radius: 6px;
+        margin-right: 0px;
+        background-color: #1B242C;
+        padding: 8px 16px;
+        border: none;
+        margin-bottom: 5px;
+    }
+
+    .filter2 input {
+        background-color: #1B242C;
+        border: none;
+        width: 160px;
+        padding: 8px 0px 8px 14px;
+        border-radius: 6px;
+        font-size: 14px;
+    }
+
+    .dropdown-toggle {
+        font-size: 14px;
+    }
+
+    .filterrightimg{
+        display: block;
+        width: 20px;
+    }
+
+    .filter2 img {
+        position: absolute;
+        left: 0;
+        align-items: center;
+        top: 10px;
+        width: 20px;
+        left: unset;
+        right: 16px;
+    }
+
+    .chapterhead {
+        padding-bottom: 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        width: 167px;
+        height: 240px;
+        transform: translate3d(0px, 59px, 0px);
+        background-color: #1B242C;
+    }
+
+    .dropdown-item {
+        padding: 8px 15px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .smallplay {
+
+        display: none;
+    }
+
+    .anime1one {
+        border-bottom: none;
+    }
+
+    .cheakbtn {
+        display: none;
+    }
+
+    .cheakbtn2 {
+        display: block;
+        position: absolute;
+        top: 80%;
+        bottom: 0;
+        width: 20px;
+        transform: translateY(-50%);
+        height: 20px;
+        margin: 5px;
+    }
+
+    .animes {
+        border-radius: 6px;
+        background-color: transparent;
+        position: relative;
+    }
+
+    .animesserial {
+        display: flex;
+        padding: 10px;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .animeimgdiv img {
+        width: 130px;
+    }
+
+    .chapters {
+        padding: 10px;
+    }
+
+    .bottombtn {
+        text-align: center;
+        text-decoration: none;
+        background-color: #f68913;
+        color: white;
+        padding: 10px 55px;
+        text-transform: uppercase;
+        font-size: 16px;
+        font-weight: bold;
+        display: block;
+        margin: 0 auto;
+        margin-top: 60px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+        border: none;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 32px;
+        margin-bottom: 32px;
+        width: 160px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 20px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+
+
+}

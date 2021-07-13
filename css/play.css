@@ -1,0 +1,1206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #171D23;
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p, button, a, span{
+    font-family: "Nunito", sans-serif;
+}
+
+
+a{
+    text-decoration: none;
+}
+
+
+/* Navbar */
+
+:root {
+    --main_color: #f68913;
+    --main_bg: #171d23;
+}
+
+.navbar {
+    font-family: "Nunito", sans-serif;
+    height: 100px;
+    background: linear-gradient(
+        180deg,
+        rgba(23, 29, 35, 1) 0%,
+        rgba(100, 104, 108, 0.5522409647452731) 100%
+    );
+    border-bottom: 3px solid #707070;
+    z-index: 9999;
+}
+
+
+.nav-link {
+    font-size: 20px;
+    color: #fff !important;
+}
+
+.nav-item {
+    margin: 0 10px;
+}
+
+.active_page {
+    color: var(--main_color) !important;
+    font-weight: 700;
+    position: relative;
+}
+
+.active_page::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    border-bottom: 3px solid var(--main_color);
+    bottom: -28px;
+    left: 0;
+    border-radius: 5px;
+}
+
+/* search_div */
+.search_div {
+    position: relative;
+    margin: 0 15px;
+}
+
+.search_div input {
+    width: 336px;
+    border: 2px solid var(--main_color);
+    border-radius: 10px;
+    background-color: transparent;
+    color: #fff;
+    padding: 12px;
+    padding-right: 55px;
+}
+
+.search_div img {
+    position: absolute;
+    right: 12px;
+    top: 10px;
+}
+
+.nav_icon {
+    margin: 0 15px;
+}
+
+.nav_icon img {
+    margin: 0 15px;
+}
+
+.custom_btn1 {
+    background: transparent;
+    color: #fff;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 140px;
+    height: 51px;
+    transition: 0.2s;
+    margin: 7px 15px;
+}
+
+.custom_btn1:hover {
+    background: var(--main_color);
+    color: #fff;
+}
+
+.custom_btn2 {
+    background: var(--main_color);
+    color: #fff;
+    border: 1px solid var(--main_color);
+    border-radius: 10px;
+    font-size: 20px;
+    width: 140px;
+    height: 51px;
+    margin: 7px 15px;
+}
+
+.custom_btn2:hover {
+    background: transparent;
+    color: #fff;
+}
+
+.fa-bars {
+    color: white;
+    font-size: 30px;
+}
+
+.my_btns {
+    display: flex;
+}
+
+.navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+
+    flex-wrap: initial;
+}
+
+
+
+/*------------- Mobile Navbar---------*/
+
+/* Nav Head */
+
+.mobnavmain{
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    background-color: #22282D !important;
+}
+
+.navbar-dark .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.form-control {
+    margin-top: 15px;
+    border-radius: 20px;
+    padding: .375rem .75rem .375rem 1rem;
+    background-color: transparent;
+    border: 1px solid #F68913;
+}
+
+
+
+
+
+/* Search Down */
+
+.searchresult {
+    margin-top: 10px;
+    background-color: #292E34;
+    margin: 0 -12px;
+    padding: 5px 0;
+}
+
+.mobsearch {
+    display: flex;
+    padding: 5px;
+}
+
+.mobsearchtxt {
+    padding-left: 10px;
+}
+
+
+.mobsearchtxt button {
+    border: none;
+    font-size: 8px;
+    border-radius: 15px;
+    background-color: #F68913;
+    padding: 2px 5px;
+}
+
+.mobsearchimg img {
+    height: 40px;
+}
+
+.mobsearchtxt p {
+    color: white;
+    margin: 0;
+    font-size: 12px;
+}
+
+
+
+
+/* Mobile Navbar */
+
+.offcanvas.show {
+    transform: none;
+    background-color: #22282D;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.offcanvas-header {
+    display: flex;
+    justify-content: end;
+}
+
+
+.offcanvas-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navprodiv button {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    border-radius: 10px;
+    background-color: #F68913;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    padding: 5px 0;
+}
+
+
+.navprodiv button:hover {
+    background-color: white;
+    color: #F68913;
+}
+
+
+.mobilenav {
+    margin-top: 30px;
+}
+
+.mobilenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.mobilenav ul li {
+    padding-top: 15px;
+}
+
+.mobilenav a {
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.8;
+}
+
+.mobilenav a:hover {
+    color: #F68913;
+}
+
+
+
+.mobdrama {
+    margin-top: 30px;
+}
+
+.mobdrama button {
+    width: 200px;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #F68913;
+    border-radius: 10px;
+    background-color: transparent;
+    font-size: 22px;
+    font-family: 'Nunito', sans-serif;
+    opacity: 0.8;
+    color: white;
+    padding: 5px 0;
+}
+
+.mobdrama button:hover {
+    background-color: #F68913;
+}
+
+.mobsocial {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.mobsocial img {
+    margin: 0 5px;
+}
+
+
+
+
+
+
+/* Hero Area */
+
+.heromain{
+    padding: 50px;
+}
+
+.heromain h1{
+    font-size: 50px;
+    color: white;
+    padding-left: 10px;
+}
+
+.playdiv {
+    padding: 10px;
+}
+
+.player{
+    position: relative;
+}
+
+.playimg{
+    width: 100%;
+}
+
+.playbtn {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.playcontrol{
+    padding-top: 30px;
+}
+
+.playcontrol img{
+    display: block;
+    margin: 0 auto;
+}
+
+.playcontrol{
+    position: relative;
+}
+
+.playdwn {
+    position: absolute;
+    right: 0;
+    top: 30px;
+}
+
+button#dropdownMenuButton1 {
+    width: 260px;
+    text-align: left;
+    padding: 10px;
+    background: #1B242C;
+    border: none;
+    border-radius: 10px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    inset: 0px auto auto 0px;
+    margin: 0px;
+    width: 260px;
+    height: 240px;
+    transform: translate3d(0px, 59px, 0px);
+    background-color: #1B242C;
+}
+
+.dropdown-item{
+    padding: 10px;
+    color: white;
+    font-size: 22px;
+}
+
+.dropdown-item:hover {
+    padding: 10px;
+    color: #F68913;
+    font-size: 22px;
+    background-color: #747899;
+}
+
+
+.dropdown-toggle::after {
+    display: none;
+}
+
+.playdwn i {
+    float: right;
+    padding-top: 6px;
+}
+
+.playdwn button{
+    font-size: 25px;
+}
+
+.downloadbtns{
+    margin-top: 50px;
+}
+
+.downloadbtns h2{
+    font-size: 34px;
+    color: white;
+}
+
+.downbtns {
+    margin-top: 40px;
+}
+
+.downbtns button {
+    margin-right: 30px;
+    padding: 10px;
+    font-size: 35px;
+    border: none;
+    color: white;
+    background: #F68913;
+    border-radius: 15px;
+    width: 222px;
+}
+
+.comments {
+    margin-right: 30px;
+    padding: 10px 50px;
+    font-size: 35px;
+    border: none;
+    color: white;
+    background: #F68913;
+    border-radius: 15px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+.nextplay{
+    padding: 10px;
+
+}
+
+.nextplayhead {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.nextplayhead hr {
+    width: 38px;
+    color: white;
+    height: 3px;
+    margin: 18px 4px 18px 0;
+}
+
+.nextplayhead span {
+    color: white;
+    font-size: 28px;
+}
+
+.nextplays{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.nextplays img {
+    width: 100%;
+}
+
+.nextplays:hover .nxtplaybtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.nxtplaybtn{
+    height: 100%;
+    width: 100%;
+    background: radial-gradient(circle, rgba(148,187,233,0) 0%, rgba(0,0,0,0.58) 0%, rgba(0,0,0,0.58) 100%);
+    display: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    transform: translate(-50%,-50%);
+
+}
+
+.nxtplaybtn img{
+    padding: 0;
+    height: 44px;
+    width: 44px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nxtplaybtn p{
+    font-size: 20px;
+    margin: 0;
+    color: white;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+
+.footer{
+    background-color: #1B242C;
+}
+
+.footer img {
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    margin-bottom: 32px;
+}
+
+
+
+.footernav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 32px;
+    padding-left: 0;
+}
+
+.footernav ul li{
+    padding: 0 10px;
+    text-align: center;
+}
+
+.footernav ul li a{
+    color: #707070;
+    text-decoration: none;
+}
+
+
+
+.footer hr {
+    text-align: center;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    height: 2px;
+    color: #bbbec0;
+}
+
+.footer p {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 30px;
+    margin: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+}
+
+
+/* Responsive */
+
+
+@media (max-width:1700px){
+
+
+}
+
+
+
+@media (max-width:1500px){
+
+
+    .heromain h1 {
+        font-size: 45px;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .nextplayhead span {
+        color: white;
+        font-size: 26px;
+    }
+
+    .downloadbtns h2 {
+        font-size: 28px;
+        color: white;
+    }
+
+    .downbtns button {
+        margin-right: 30px;
+        padding: 5px;
+        font-size: 30px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        width: 200px;
+    }
+
+    .comments {
+        margin-right: 30px;
+        padding: 10px 50px;
+        font-size: 30px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 120px;
+        margin-bottom: 80px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        width: 300px;
+    }
+
+    .playcontrol img {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+    }
+
+
+}
+
+
+
+@media (max-width:1400px){
+
+        /* Navbar */
+
+        .nav_icon {
+            margin: 0;
+        }
+    
+        .search_div input {
+            width: 295px;
+        }
+    
+        .search_div {
+            margin: 0;
+        }
+    
+        .nav-link {
+            font-size: 17px;
+        }
+    
+
+
+
+    .downloadbtns h2 {
+        font-size: 26px;
+        color: white;
+    }
+
+    .downbtns button {
+        margin-right: 30px;
+        padding: 5px;
+        font-size: 30px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        width: 180px;
+    }
+
+    .comments {
+        margin-right: 30px;
+        padding: 10px 50px;
+        font-size: 30px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 100px;
+        margin-bottom: 60px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 24px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 50px;
+        margin-bottom: 50px;
+        width: 280px;
+    }
+}
+
+
+
+@media (max-width:1300px){
+
+
+        /* Navbar */
+
+        .search_div input {
+            width: 210px;
+        }
+    
+    
+        .nav-item {
+            margin: 0 2px;
+        }
+    
+        .logo_div {
+            width: 150px;
+        }
+    
+        .logo_div img {
+            width: 100%;
+        }
+    
+        .custom_btn1 {
+            width: 92px;
+        }
+    
+        .custom_btn2 {
+            width: 92px;
+        }
+    
+        .nav_icon {
+            display: none;
+        }
+
+
+    .heromain h1 {
+        font-size: 40px;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .nextplayhead span {
+        color: white;
+        font-size: 24px;
+    }
+
+    .downloadbtns h2 {
+        font-size: 23px;
+        color: white;
+    }
+
+    .playbtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 120px;
+        width: 120px;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 200px;
+        text-align: left;
+        padding: 10px;
+        background: #1B242C;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .playdwn button {
+        font-size: 20px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        width: 200px;
+        height: 200px;
+        transform: translate3d(0px, 59px, 0px);
+        background-color: #1B242C;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        color: white;
+        font-size: 16px;
+    }
+
+}
+
+
+
+@media (max-width:991px){
+
+
+    .mobnavmain{
+        display: block;
+    }
+
+    .top_navbar{
+        display: none;
+    }
+
+    .navbar {
+        font-family: "Nunito", sans-serif;
+        height: auto;
+        background: none;
+        border-bottom: none;
+        z-index: 0;
+    }
+
+    .navbar>.container, .navbar>.container-fluid, .navbar>.container-lg, .navbar>.container-md, .navbar>.container-sm, .navbar>.container-xl, .navbar>.container-xxl {
+        flex-wrap: inherit;
+    }
+
+
+        /* Navbar */
+        .active_page::after {
+            display: none;
+        }
+
+    
+        .my_btns {
+            float: right;
+        }
+
+    .heromain {
+        padding: 35px;
+    }
+
+    .heromain h1 {
+        font-size: 30px;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .playbtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 100px;
+        width: 100px;
+    }
+
+    .nextplayhead span {
+        color: white;
+        font-size: 16px;
+    }
+
+    .nextplayhead hr {
+        width: 30px;
+        color: white;
+        height: 1px;
+        margin: 18px 4px 18px 0;
+    }
+
+
+    .playcontrol img {
+        display: block;
+        margin: 0 auto;
+        width: 160px;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 156px;
+        text-align: left;
+        padding: 8px;
+        background: #1B242C;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .playdwn button {
+        font-size: 15px;
+    }
+
+    .dropdown-menu {
+        position: absolute;
+        inset: 0px auto auto 0px;
+        margin: 0px;
+        width: 150px;
+        height: 200px;
+        transform: translate3d(0px, 59px, 0px);
+        background-color: #1B242C;
+    }
+
+    .dropdown-item {
+        padding: 10px;
+        color: white;
+        font-size: 14px;
+    }
+
+    .downloadbtns h2 {
+        font-size: 20px;
+        color: white;
+    }
+
+    .downloadbtns h2 br{
+        display: none;
+    }
+
+    .downbtns button {
+        margin-right: 30px;
+        padding: 5px;
+        font-size: 25px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        width: 150px;
+    }
+
+    .downbtns button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .downbtns button {
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        width: 140px;
+    }
+
+    .comments {
+        margin-right: 30px;
+        padding: 10px 50px;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 40px;
+        margin-bottom: 40px;
+        width: 200px;
+    }
+
+    .footer img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 30px;
+        margin-bottom: 30px;
+        width: 200px;
+    }
+
+    .footer p {
+        text-align: center;
+        font-weight: bold;
+        color: white;
+        font-size: 18px;
+        margin: 0;
+        padding-top: 25px;
+        padding-bottom: 30px;
+    }
+
+
+}
+
+
+
+@media (max-width:768px){
+
+
+    .navprodiv button {
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #F68913;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        padding: 5px 0;
+    }
+
+    .mobdrama button {
+        width: 280px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #F68913;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 0;
+    }
+
+
+
+    .playdiv {
+        padding: 0px;
+    }
+
+    .heromain h1 {
+        font-size: 24px;
+        color: white;
+        padding-left: 10px;
+    }
+
+    .nextplay {
+        padding: 0 10px;
+    }
+
+    .nextplayhead hr {
+        width: 22px;
+        color: white;
+        height: 1px;
+        margin: 18px 4px 18px 0;
+    }
+
+    .playbtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 70px;
+        width: 70px;
+    }
+
+    .playcontrol img {
+        display: block;
+        margin: 0 auto;
+        width: 140px;
+    }
+
+    button#dropdownMenuButton1 {
+        width: 130px;
+        text-align: left;
+        padding: 8px;
+        background: #1B242C;
+        border: none;
+        border-radius: 10px;
+    }
+
+    .playdwn button {
+        font-size: 12px;
+    }
+
+    .downloadbtns {
+        margin-top: 35px;
+    }
+
+    .downloadbtns h2 {
+        font-size: 16px;
+        color: white;
+    }
+
+    .downbtns button {
+        margin-right: 10px;
+        padding: 5px;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        margin-bottom: 20px;
+        width: 140px;
+    }
+
+    .comments {
+        margin-right: 30px;
+        padding: 10px 50px;
+        font-size: 20px;
+        border: none;
+        color: white;
+        background: #F68913;
+        border-radius: 15px;
+        display: block;
+        margin: 0 auto;
+        margin-top: 50px;
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width:576px){
+
+    .offcanvas-start {
+        top: 0;
+        left: 0;
+        width: 240px;
+        border-right: 1px solid rgba(0, 0, 0, .2);
+        transform: translateX(-100%);
+    }
+
+    .navprodiv button {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 10px;
+        background-color: #F68913;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        color: white;
+        padding: 5px 0;
+    }
+
+
+    .mobdrama button {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        border: 1px solid #F68913;
+        border-radius: 10px;
+        background-color: transparent;
+        font-size: 22px;
+        font-family: 'Nunito', sans-serif;
+        opacity: 0.8;
+        color: white;
+        padding: 5px 0;
+    }
+
+    .heromain {
+        padding: 25px;
+    }
+
+    .playcontrol img {
+        display: block;
+        margin: 0;
+        width: 140px;
+    }
+
+    .playbtn {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+        height: 50px;
+        width: 50px;
+    }
+
+}

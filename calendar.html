@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Calendario</title>
+    <link rel="stylesheet" href="css/calendar.css">
+</head>
+
+<body>
+
+
+    <!-- Navbar -->
+
+    <section class="top_navbar">
+
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <div class="logo_div ">
+                        <img src="img/logo.png" alt="">
+                    </div>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="anime.html">Anime</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="anime1.html">Emision</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active_page" href="calendar.html">Calendario</a>
+                        </li>
+                    </ul>
+
+                    <div class="search_div">
+                        <input type="text" placeholder="Buscar....">
+                        <img src="img/icons8_search_96px_3.png" alt="">
+                    </div>
+
+                    <div class="nav_icon">
+                        <img src="img/icons8_play_button_96px.png" alt="">
+                        <img src="img/icons8_discord_96px.png" alt="">
+                    </div>
+
+                    <div class="my_btns">
+                        <button class="btn custom_btn1">Dramas</button>
+                        <div class="dropdown">
+                            <button class="btn custom_btn3 dropdown-toggle" type="button" id="dropdownMenuButton1"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="pro_pic">
+                                    <img src="img/pro_pic.png" alt="">
+                                </div>
+                                Nekokawai..
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="calender1.html">
+                                        <i class="far fa-user"></i> Mi Perfil</a></li>
+                                <li class="btmbtn"><a class="dropdown-item" href="#">
+                                        <i class="fas fa-sign-out-alt"></i> Cerrar sesión </a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+
+    </section>
+
+
+
+
+    <!--Mobile Profile Nav-->
+
+
+    <section class="mobnavmain">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+
+
+                <a class="navbar-brand" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+                    aria-controls="offcanvasExample"><img src="img/right.png"></a>
+
+                <div class="mobheadlogo">
+                    <img src="img/mobilelogo.png">
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- <span class="navbar-toggler-icon"></span> -->
+                    <img src="img/search2.png">
+                </button>
+
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Calen" aria-label="Search"
+                            data-bs-target="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+
+
+                    </form>
+
+                    <div class="searchresult">
+                        <div class="mobsearch">
+                            <div class="mobsearchimg">
+                                <img src="img/searchresult.png">
+                            </div>
+                            <div class="mobsearchtxt">
+                                <p>Calendario djjdjdjdfuuu dkgjfdkl
+                                    dfgjhfdjgh...</p>
+                                <button>Anime</button>
+                            </div>
+                        </div>
+
+                        <div class="mobsearch">
+                            <div class="mobsearchimg">
+                                <img src="img/searchresult.png">
+                            </div>
+                            <div class="mobsearchtxt">
+                                <p>Calendario djjdjdjdfuuu dkgjfdkl
+                                    dfgjhfdjgh...</p>
+                                <button>Anime</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+        </nav>
+
+
+
+        <!-- offcanvas -->
+
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+
+                <div>
+                    <img src="img/arrowleft.png" data-bs-dismiss="offcanvas" aria-label="Close">
+                </div>
+
+            </div>
+            <div class="offcanvas-body">
+
+
+                <div class="navprodiv">
+                    <img src="img/mobilenavpro.png">
+                    <h2>Profile name</h2>
+                </div>
+
+                <div class="mobilenav">
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="anime.html">Anime</a></li>
+                        <li><a href="anime1html">Emision</a></li>
+                        <li><a href="calendar.html">Calendario</a></li>
+                    </ul>
+                </div>
+
+                <div class="prodiv">
+                    <div class="mobprofile">
+                        <p>Mi perfil</p>
+                        <img src="img/mobuser.png">
+                    </div>
+                    <div class="moblogoff">
+                        <p>Cerrar sesion</p>
+                        <img src="img/moblogoff.png">
+                    </div>
+                </div>
+
+                <div class="mobdrama">
+                    <button>Dramas</button>
+
+                    <div class="mobsocial">
+                        <img src="img/discord.png">
+                        <img src="img/youtube.png">
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+    <section>
+        <div class="heroarea">
+            <h1>Lunes</h1>
+
+            <div class="heromain">
+                <div class="row">
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/85434.jpg">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 4</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Seinen</button>
+                                            <button>Comedia</button>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter2.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 5</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Yaoi</button>
+                                            <button>Yuri</button>
+                                            <button>+</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter3.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 6</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Sobrenatural</button>
+                                            <button>Aventura</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+            <div class="heromain">
+                <div class="row">
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter4.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 700</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Ciencia Fic...</button>
+                                            <button>Cyberpunk</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter5.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 600</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Fantasía</button>
+                                            <button>Crime</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter6.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 800</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Action</button>
+                                            <button>Crime</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+            <div class="heromain">
+                <div class="row">
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter7.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 67</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Harem</button>
+                                            <button>Escolares</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter8.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 34</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Shonen</button>
+                                            <button>Crime</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4">
+
+                        <div class="chapters">
+
+                            <div class="row">
+                                <div class="col-md-5 col-5">
+                                    <div class="chapterimg">
+                                        <img src="img/chapter9.png">
+                                    </div>
+                                </div>
+
+                                <div class="col-md-7 col-7">
+                                    <div class="chapterdetails">
+                                        <h3>Capitulo 967</h3>
+                                        <a href="anime_details.html">
+                                            <h2>Boruto: Naruto Next Generati...</h2>
+                                        </a>
+                                        <h4>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod
+                                            tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+                                            At
+                                            vero.</h4>
+                                        <div class="btndiv">
+                                            <button>Josei</button>
+                                            <button>Crime</button>
+                                        </div>
+                                        <div class="datedivs">
+                                            <p>Se Estreno</p>
+                                            <span>12 oct, 2021</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <h2 class="bottomtxt">Martes</h2>
+
+
+
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+    <section>
+        <div class="footer">
+            <img src="img/footerlogo.png">
+            <hr>
+            <p>MonosChinos © 2020 Todos los derechos reservados - Ningun video se encuentra alojado en nuestros
+                servidores. No somos <br>
+                fansub, todos los vídeos enlazados son tomados de internet, de sitios webs gratuitos.</p>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
